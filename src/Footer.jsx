@@ -33,6 +33,11 @@ const Footer = () => {
         
           <div className="text-white text-center md:text-left flex gap-3 ">
             <IoLocationOutline  size={20}  />
+            <p className="text-gray-400">3rd block, 9A Aerodrome Rd Apapa, <br />  Lagos, Canada</p> 
+          </div>
+         
+          <div className="text-white text-center md:text-left flex gap-3 ">
+            <IoLocationOutline  size={20}  />
             <p className="text-gray-400">3rd block, 9A Aerodrome Rd Apapa, <br />  Lagos, Nigeria</p> 
           </div>
          

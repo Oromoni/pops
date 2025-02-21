@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.list-item-with-dot::before {
+    content: '•';
+    margin-right: 8px; /* Adjust space between the dot and text */
+    color: #000; /* Dot color */
+  }
+  

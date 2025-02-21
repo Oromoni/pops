@@ -1,65 +1,89 @@
 import React from "react";
+import boat from "./asset/boat.jpg"
 
 const Services = () => {
   return (
     <div id="Services" name={Services}>
-      <section className="bg-[#241F12] text-white w-full ">
-        <h6 className="text-center p-6 text-xl font-bold text-white">
-          SERVICES
-        </h6>
-        <div className=" p-5 sm:flex sm:flex-row sm:gap-2 mt-4 gap-5 sm:justify-around sm:items-center items-center justify-center flex flex-col flex-grow">
-          <div className="w-80 bg-black text-white rounded-lg h-[480px]">
-            <img
-              src="https://static.wixstatic.com/media/100a69_f58ac86f725240f8b45088cd3d85ab16~mv2.jpg/v1/crop/x_265,y_0,w_1471,h_1108/fill/w_300,h_226,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/maritime-security-homepage_edited.jpg"
-              alt=""
-              className="rounded-lg w-80"
-            />
-            <div className="mt-4 p-2">
-              <h6>Design & Engineering</h6>
-              <p className="mt-2">
-                Provides customized ship designs, vessel specifications,
-                technical consultancy, FEED, integrated and turnkey engineering
-                solutions to meet clients’ specific requirements in the Offshore
-                & Marine and Process Plants industries..
-              </p>
-              <button className="mt-2">Read more</button>
-            </div>
-          </div>
-          <div className="w-80 bg-black text-white  rounded-lg h-[480px]">
-            <img
-              src="https://static.wixstatic.com/media/100a69_830ea3d8186045b7a7e16006b4a95da8~mv2.jpg/v1/fill/w_300,h_226,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Diadema-Prua11.jpg"
-              alt=""
-              className="rounded-lg w-80"
-            />
-            <div className="mt-4 p-2">
-              <h6>Design & Engineering</h6>
-              <p className="mt-2">
-                Provides customized ship designs, vessel specifications,
-                technical consultancy, FEED, integrated and turnkey engineering
-                solutions to meet clients’ specific requirements in the Offshore
-                & Marine and Process Plants industries..
-              </p>
-              <button className="mt-2">Read more</button>
-            </div>
-          </div>
-          <div className="w-80 bg-black text-white  rounded-lg h-[480px]">
-            <img
-              src="https://static.wixstatic.com/media/100a69_f58ac86f725240f8b45088cd3d85ab16~mv2.jpg/v1/crop/x_265,y_0,w_1471,h_1108/fill/w_300,h_226,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/maritime-security-homepage_edited.jpg"
-              alt=""
-              className="rounded-lg w-80"
-            />
-            <div className="mt-4 p-2">
-              <h6>Design & Engineering</h6>
-              <p className="mt-2">
-                Provides customized ship designs, vessel specifications,
-                technical consultancy, FEED, integrated and turnkey engineering
-                solutions to meet clients’ specific requirements in the Offshore
-                & Marine and Process Plants industries..
-              </p>
-              <button className="mt-2">Read more</button>
-            </div>
-          </div>
-        </div>
+      <section className="min-h-screen w-full bg-[#eceded] text-black">
+      <div className="relative h-60 bg-pink-400">
+  <img src={boat} alt="boat" className="h-full w-full object-cover rounded-br-[40]" />
+  <div className="absolute top-0 left-0 h-full w-full bg-[#0c2017] opacity-80 rounded-br-[40]"></div>
+  <div className="absolute top-0 left-0 h-full w-full flex items-center justify-center">
+    <span className="text-white font-bold text-6xl">Services</span>
+  </div>
+</div>
+<div className="">
+  
+</div>
+<div className=" p-4">
+  <div className="flex flex-row justify-between items-center p-1 pl-20 pr-20">
+    <div className="h-[463px] w-[450px] ">
+    <p className="text-xl font-bold mb-4">PRODUCTS</p>
+<ul className="space-y-2">
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Elemental Gases
+  </li>
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Acetylene
+  </li>
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Propane
+  </li>
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Refigrated Liquefied Oxygen
+  </li>
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Refigrated Liquefied Argon
+  </li>
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Refigrated Liquefied Nitrogen
+  </li>
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Welding Mixtures based on Oxygen & Argon
+  </li>
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Liquefied Carbon Dioxide
+  </li>
+  <li className="flex items-center">
+    <span className="w-2 h-2 bg-black rounded-full mr-2"></span> Compressed Hydrogen & other Non-Combustible Gases
+  </li>
+</ul>
+
+    </div>
+    <div className="h-[463px] w-[575px]">
+    <p className="text-medium text-green-800 font-bold mb-4">WHY CHOOSE US</p>
+
+    <p className="text-base mb-4">
+  We provide a dedicated team of professionals who address the challenges of the oil and gas industry by offering a comprehensive range of onshore and offshore logistics and procurement solutions.
+</p>
+
+<p className="text-base mb-4">
+  Our services include the delivery of oil, oil products, and equipment for oil and gas production and processing. We adhere to the highest safety and quality standards, ensuring safe and reliable warehousing, packaging, and shipping of cargo to its final destination.
+</p>
+
+<p className="text-base">
+  We also offer cost-effective transportation and distribution of oil and gas freight by leveraging our global network of carriers and agents. Our highly trained personnel handle goods with modern equipment to ensure safe loading onto vessels or trucks for offshore and onshore delivery.
+</p>
+
+    </div>
+  </div>
+</div>
+    <div className="flex space-x-4 p-4">
+  <div className="flex-1 p-6 bg-white shadow-md hover:shadow-xl hover:translate-y-1 transition-all duration-300 rounded-lg">
+    <p>Content 1</p>
+  </div>
+  <div className="flex-1 p-6 bg-white shadow-md hover:shadow-xl hover:translate-y-1 transition-all duration-300 rounded-lg">
+    <p>Content 2</p>
+  </div>
+  <div className="flex-1 p-6 bg-white shadow-md hover:shadow-xl hover:translate-y-1 transition-all duration-300 rounded-lg">
+    <p>Content 3</p>
+  </div>
+  <div className="flex-1 p-6 bg-white shadow-md hover:shadow-xl hover:translate-y-1 transition-all duration-300 rounded-lg">
+    <p>Content 4</p>
+  </div>
+</div>
+
+
       </section>
     </div>
   );

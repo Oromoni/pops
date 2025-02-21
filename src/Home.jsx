@@ -12,6 +12,7 @@ const Home = () => {
         loop
         className="object-cover h-96 w-full sm:h-[450px] pointer-events-none "></video>
       <Hero />
+      
     </div>
   );
 };

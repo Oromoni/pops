@@ -1,15 +1,18 @@
 import React from "react";
+import Form from "./Form";
+import Services from "./Services";
+import About from "./About";
 //import Services from "../src/Services";
 
 const Hero = () => {
   return (
     <>
-      <div className=" p-2 bg-black/95" id="About">
-        <div className="text-white  p-5 sm:flex sm:flex-row sm:gap-6 mt-4">
-          <h6 className="text-2xl font-bold sm:w-1/2" id="about">
-            As a<span className="text-[#F6DB31]"> Marine </span>
-            firm with 10+ years of industry excellence, we provide
-            holistic and bespoke solutions for your watercraft shipping needs.
+      <div className=" p-2 bg-[#0c2017] text-white" >
+        <div className="  p-5 sm:flex sm:flex-row sm:gap-6 mt-4">
+          <h6 className="text-2xl font-bold sm:w-1/2" >
+            As an<span className="text-[#F6DB31]"> Oil and Gas </span>
+            integrated logistic firm with 15+ years of industry excellence, we provide
+            holistic and bespoke solutions for your marine and shipping needs.
           </h6>
 
           <div className="mt-2 sm:w-1/2 sm:text-sm text-5xl">
@@ -51,6 +54,9 @@ Offshore Materials & Equipment Supply: &nbsp;
           </div>
         </div>
       </div>
+      <Services/>
+      <About/>
+      <Form/>
     </>
   );
 };
