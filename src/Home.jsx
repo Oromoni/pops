@@ -4,7 +4,7 @@ import Hero from "./Hero";
 
 const Home = () => {
   return (
-    <div className="min-h-screen w-full relative !scroll-smooth">
+    <div className="min-h-screen w-full relative !scroll-smooth font-sans">
       <video
         src={video}
         autoPlay
