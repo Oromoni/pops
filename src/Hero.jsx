@@ -9,9 +9,9 @@ import Slider from "./Slider";
 const Hero = () => {
   return (
     <>
-      <div className=" p-2 bg-[#091912] text-white w-full" >
+      <div className=" p-2 bg-[#091912] text-white w-full text-xl md:text-2xl" >
         <div className="  p-5 sm:flex sm:flex-row sm:gap-6 mt-4 flex items-center">
-          <h6 className="text-2xl font-bold sm:w-2/3 " >
+          <h6 className="text-xl md:text-2xl font-bold sm:w-2/3 " >
           With over  
           <span  className="text-[#F6DB31]"> 15+ years &nbsp;
           </span>
