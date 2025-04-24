@@ -9,7 +9,7 @@ const Services = () => {
     <div  >
       <section className="min-h-screen w-full bg-[#eceded] text-black font-sans pb-12" id="service">
         {/* Hero Section with Boat Image */}
-        <div className="relative h-60  bg-pink-400">
+        <div className="relative md:h-60 h-32 bg-pink-400">
           <img
             src={boat}
             alt="boat"
