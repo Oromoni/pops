@@ -1,15 +1,17 @@
 import React from "react";
 import boat from "./asset/boat.jpg";
 import { FaCheck } from 'react-icons/fa';
+import Slider from "./Slider";
 
 
 
 const Services = () => {
   return (
     <div  >
+      <Slider/>
       <section className="min-h-screen w-full bg-[#eceded] text-black font-sans pb-12" id="service">
         {/* Hero Section with Boat Image */}
-        <div className="relative md:h-60 h-36 bg-pink-400">
+        <div className="relative md:h-60 h-36 ">
           <img
             src={boat}
             alt="boat"
