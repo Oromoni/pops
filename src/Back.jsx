@@ -38,13 +38,15 @@ const Back = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       {/* Content on top of the image */}
-      <div className="relative z-10 flex justify-center items-center pt-16 p-4">
+      <div className="relative z-10 flex justify-center items-center min-h-screen pt-16 p-4">
         <form
           onSubmit={handleSubmit}
           className="bg-white w-full sm:w-[550px] p-8 rounded-lg shadow-lg"
         >
-          <h2 className="text-2xl font-bold text-center mb-6">Contact Us</h2>
-          
+          <h2 className="text-2xl font-bold text-center mb-6" id="contact">
+            Contact Us
+          </h2>
+
           {/* Name Field */}
           <div className="mb-4 relative">
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -101,9 +103,6 @@ const Back = () => {
               placeholder="Enter your phone number"
               required
             />
-            <small className="text-gray-500 mt-2 block">
-              Please enter a valid phone number (e.g., +123 456 7890).
-            </small>
           </div>
 
           {/* Message Field */}
@@ -127,7 +126,7 @@ const Back = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-black text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               Submit
             </button>

@@ -6,8 +6,8 @@ import { FaCheck } from 'react-icons/fa';
 
 const Services = () => {
   return (
-    <div id="Services" name={Services}>
-      <section className="min-h-screen w-full bg-[#eceded] text-black font-sans pb-12">
+    <div  >
+      <section className="min-h-screen w-full bg-[#eceded] text-black font-sans pb-12" id="service">
         {/* Hero Section with Boat Image */}
         <div className="relative h-60  bg-pink-400">
           <img
@@ -22,10 +22,10 @@ const Services = () => {
         </div>
 
         {/* Content Section */}
-        <div className="p-4 pt-12">
-          <div className="flex flex-col sm:flex-row justify-between items-center p-1 sm:px-10 md:px-20">
+        <div className="p-4 pt-12" >
+          <div className="flex flex-col lg:flex-row justify-between gap-10 items-center p-1 sm:px-10 md:px-20">
             {/* Products List */}
-            <div className="h-[463px] w-full sm:w-[450px] cursor-pointer rounded-2xl mb-6 sm:mb-0 bg-[#091912] text-white p-3">
+            <div className="h-[463px] w-full md:w-[450px] cursor-pointer rounded-2xl mb-6 sm:mb-0 bg-[#091912] text-white p-3">
               <p className="text-sm font-bold mb-4 text-white/60">PRODUCTS</p>
               <ul className="space-y-2 text-white/80 text-sm">
       <li className="flex items-center">
@@ -59,8 +59,8 @@ const Services = () => {
             </div>
 
             {/* Why Choose Us Section */}
-            <div className="h-[463px] w-full sm:w-[575px]">
-              <p className="text-sm text-green-900/80 font-bold mb-4">WHY CHOOSE US</p>
+            <div className="h-[463px] w-full md:w-[575px] p-2 rounded-2xl" id="">
+              <p className="text-sm text-green-900/80 font-bold mb-4 ">WHY CHOOSE US</p>
 
               <p className="text-base mb-4">
                 Our expert team is fully dedicated to overcoming the unique challenges of the oil and gas industry by delivering comprehensive logistic and procurement solutions tailored for both onshore and offshore operations.

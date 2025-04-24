@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoCloseOutline } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom"; // Use Link from react-router-dom
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -34,24 +34,25 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <Link
+        <a
           className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#F6DB31] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          to="/about" // Link to About page
+          href="#about" // Link to About page
         >
           About
-        </Link>
-        <Link
+        </a>
+        <a
           className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#F6DB31] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          to="/service" // Link to Services page (if you have this route)
+          href="#service" 
+      
         >
           Service
-        </Link>
-        <Link
+        </a>
+        <a
           className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#F6DB31] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          to="/contact" // Link to Contact page
+          href="#contact" // Link to Contact page
         >
           Contact
-        </Link>
+        </a>
       </div>
 
       <div className="sm:hidden">
@@ -120,14 +121,14 @@ const Navbar = () => {
                     },
                   }}
                 >
-                  <Link
+                  <a
                     onClick={() => {
                       setnav(false);
                     }}
-                    to="/about"
+                    href="#about"
                   >
                     About
-                  </Link>
+                  </a>
                 </motion.div>
                 <motion.div
                   initial={{ y: 90, opacity: 1 }}
@@ -142,14 +143,14 @@ const Navbar = () => {
                     },
                   }}
                 >
-                  <Link
+                  <a
                     onClick={() => {
                       setnav(false);
                     }}
-                    to="/service"
+                    href="#service"
                   >
                     Services
-                  </Link>
+                  </a>
                 </motion.div>
                 <motion.div
                   initial={{ y: 90, opacity: 1 }}
@@ -164,14 +165,14 @@ const Navbar = () => {
                     },
                   }}
                 >
-                  <Link
+                  <a
                     onClick={() => {
                       setnav(false);
                     }}
-                    to="/contact"
+                    href="#contact"
                   >
                     Contact
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
               <div>

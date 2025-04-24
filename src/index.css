@@ -8,3 +8,8 @@
     color: #000; /* Dot color */
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
+ 

@@ -11,8 +11,8 @@ const LogoSlider = () => {
   const logos = [mobil, logo2, logo3, total, logo2, logo3];
 
   return (
-    <div className="relative w-full overflow-hidden flex items-center h-40 mt-4 p-5 pb-2">
-      <div className="logo-container flex space-x-6 md:space-x-10">
+    <div className="relative w-full overflow-hidden flex items-center mt-4 p-5 pb-2 h-40" >
+      <div className="logo-container flex space-x-6 md:space-x-10 animate-slide">
         {/* Duplicate logos to create the infinite effect */}
         {[...logos, ...logos, ...logos].map((logo, index) => (
           <div
@@ -37,35 +37,10 @@ const LogoSlider = () => {
       </div>
 
       {/* Gradient Blur Overlay */}
-      <div className="blur-overlay"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-transparent to-white/80 pointer-events-none"></div>
 
+      {/* Tailwind's animations: Customize as per needs */}
       <style jsx>{`
-        .logo-container {
-          display: flex;
-          animation: slide 30s linear infinite; /* Slower sliding speed */
-          position: relative;
-        }
-
-        .logo-container:hover {
-          animation-play-state: paused; /* Pauses animation on hover */
-        }
-
-        .logo-item {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .blur-overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.8));
-          pointer-events: none; /* Prevent overlay from interfering with hover */
-        }
-
         @keyframes slide {
           0% {
             transform: translateX(0);
@@ -75,25 +50,13 @@ const LogoSlider = () => {
           }
         }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-          .logo-container {
-            flex-wrap: nowrap; /* Ensure logos stay in a row */
-            overflow-x: auto; /* Allow horizontal scrolling on small screens */
-          }
+        .animate-slide {
+          display: flex;
+          animation: slide 30s linear infinite; /* Slower sliding speed */
+        }
 
-          .logo-item {
-            margin: 0 10px; /* Add some spacing between logos on mobile */
-          }
-
-          .logo-container img {
-            width: 80px; /* Slightly smaller logos on mobile */
-            height: 80px;
-          }
-
-          .blur-overlay {
-            background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.8));
-          }
+        .logo-container:hover {
+          animation-play-state: paused; /* Pauses animation on hover */
         }
       `}</style>
     </div>
