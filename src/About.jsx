@@ -70,7 +70,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex  justify-center md:justify-start items-center flex-col md:flex-row pt-5 md:pt-7 p-2 gap-6 lg:px-10">
-  <div className="bg-black h-[450px] rounded-2xl md:h-[480px] mt-44 lg:h-[463px] w-full lg:max-w-[420px]">
+  <div className="bg-black h-[450px] rounded-2xl md:h-[480px] mt-52 lg:h-[463px] w-full lg:max-w-[420px]">
     <img
       src={tanker}
       alt="tanker"
