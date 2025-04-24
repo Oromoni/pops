@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div className=" min-h-screen  font-sans" id="about">
       {/* Hero Section with Boat Image */}
-      <div className="relative h-48  ">
+      <div className="relative md:h-48 h-36">
         <img
           src={boat3}
           alt="boat"
